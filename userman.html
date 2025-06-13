@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="heading">
+        <img src="img/apc-removebg-preview.png" alt="">
+        <h1>Alice Premium Dishes</h1>
+        <a href="admin.html">Dashboard</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="order.html">Order Management</a>
+        <a href="#staff">Staff Management</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <main>
+        <input class="search-input" type="text" placeholder="Search users">
+        <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+        <div class="welcome">
+            <h1 style="text-align: center;">User Management Page</h1>
+        </div>
+        <div class="thetable">
+            <h3>Users</h3>
+            <table bgcolor="black">
+                <tr bgcolor="white">
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Full Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+                <tr bgcolor="white">
+                    <td>191169</td>
+                    <td>kingjajo@apc</td>
+                    <td>Jajo Albabah</td>
+                    <td>Admin</td>
+                    <td>albabah@gmail.com</td>
+                    <td><button>Edit</button><button>Delete</button></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Add New User</h3>
+            <form action="">
+                <input type="text" placeholder="Enter Full Name">
+                <input type="text" placeholder="Add username">
+                <h5>Email</h5>
+                <input type="email" placeholder="email@gmail.com" required style="width: 100%; height: 36px; border-radius: 5px; border: 1px solid #ddd; margin: 10px 0px; padding: 10px;">
+                <h5>Password</h5>
+                <input type="password" placeholder="enter password" minlength="8" style="width: 100%; height: 36px; border-radius: 5px; border: 1px solid #ddd; margin: 10px 0px; padding: 10px;">
+                <h5>User Role</h5>
+                <select name="Category" id="ctgr">
+                    <option value="1">Admin</option>
+                    <option value="2">Manager</option>
+                    <option value="3">Staff</option>
+                </select>
+                    <button type="submit">Add Users</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

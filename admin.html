@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul class="nav-menu">
+            <li><a href="menu.html">Menu Management</a></li>
+            <li><a href="order.html">Order Management</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="staff.html">Staff Management</a></li>
+            <li><a href="userman.html">User Management</a></li>
+        </ul>
+        <div class="logout">
+            <a href="#" style="color: #fff; text-decoration: none;">Logout</a>
+        </div>
+    </div>
+    <div class="heading">
+        <img src="img/apc-removebg-preview.png" alt="logo of AP Dishes">
+        <h1>Alice Premium Dishes</h1>
+        <nav>
+        <a href="#admin">Dashboard</a>
+        <a href="menu.html">Menu Management</a>
+        <a href="order.html">Order Management</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="staff.html">Staff Management</a>
+        <a href="userman.html">User Management</a>
+        <a href="#logout">Logout</a>
+        </nav>
+    </div>
+    <main>
+        <div class="welcome">
+            <h1>Welcome to The Admin Dashboard</h1>
+        </div>
+        <div class="box">
+            <a href="order.html" class="cards">
+                <img  src="img/order.png" alt="order cart">
+                <p class="cards_title">Today's Order</p>
+                <p class="description">View all today's order</p>
+            </a>
+            <a href="order.html" class="cards">
+                <img src="img/pending.png" alt="time in cart">
+                <p class="cards_title">Pending Order</p>
+                <p class="description">View all Pending order</p>
+            </a>
+            <a href="order.html" class="cards">
+                <img src="img/completed.png" alt="man completed cart">
+                <p class="cards_title">Completed Orders</p>
+                <p class="description">View all completed order</p>
+            </a>
+            <a href="reservation.html" class="cards">
+                <img src="img/resev.png" alt="photo of resevration">
+                <p class="cards_title">Total Reservation</p>
+                <p class="description">View all reservation</p>
+            </a>
+            <a href="inventory.html" class="cards">
+                <img src="img/low inventory.png" alt="low inventory png">
+                <p class="cards_title">Low Inventory Alert</p>
+                <p class="description">Check for Low Inventory</p>
+            </a>
+            <a href="menu.html" class="cards">
+                <img src="img/topselling.png" alt="a star rated photo">
+                <p class="cards_title">Top-Selling Item</p>
+                <p class="description">View the Top-Selling items for the day</p>
+            </a>
+            <a href="menu.html" class="cards">
+                <img src="img/totalsales.png" alt="">
+                <p class="cards_title">Total Sales Today</p>
+                <p class="description">View the total revenue </p>
+            </a>
+            <a href="staff.html" class="cards">
+                <img src="img/workers-removebg-preview.png" alt="">
+                <p class="cards_title">Staff on Duties</p>
+                <p class="description">View all staff currently on duties</p>
+            </a>
+            <a href="userman.html" class="cards">
+                <img src="img/users.png" alt="">
+                <p class="cards_title">Users</p>
+                <p class="description">View and Manage all Users</p>
+            </a>
+            </div>
+            <div class="thetable">
+                <h3>Recent Activities</h3>
+                <table bgcolor="black">
+                    <tr bgcolor="white">
+                        <th>No</th>
+                        <th>Order Id</th>
+                        <th>Table Number</th>
+                        <th>Status</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr bgcolor="white">
+                        <td>1</td>
+                        <td>19887</td>
+                        <td>19887</td>
+                        <td>Taken</td>
+                        <td>5:30</td>
+                        <td>5/10/24</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="butt">
+                    <button>Add New Menu Item</button>
+                    <button>Process New Order</button>
+                    <button>New Inventory</button>
+                    <button>Add New Reservation</button>
+                    <button>Manage Staff</button>
+                    <button>Logout</button>
+                    <button>General Reports</button>
+                    <button>Clear Notification</button>
+                    <button>Update Menu Prices</button>
+                    <button>Logout</button>
+            </div>
+    </main>
+</body>
+</html>

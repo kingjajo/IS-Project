@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dsiplay</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+
+    body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    color: #333;
+    }
+    .heading {
+        width: 100%;
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        word-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    .heading h1 {
+    font-size: 1.8rem;
+    color: #11f9e6;
+    }
+
+    .heading a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #f0f2f3;
+    font-weight: bold;
+    font-size: large;
+    word-spacing: 5px;
+    transition: 0.3s;
+}
+
+.heading a:hover {
+    color: #e73ca8;
+}
+.heading img {
+    height: 60px; /* Adjust logo height */
+    width: auto; /* Maintain image aspect ratio */
+    margin-right: 35px;
+}
+.menu-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Menu Categories */
+.menu-categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.category {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.category.active {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Menu Items */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fafafa;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu-categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category {
+        margin: 5px;
+        padding: 10px 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <img src="img/apc-removebg-preview.png" alt="logo of AP Dishes">
+        <h1>Alice Premium Dishes</h1>
+        <a href="#home">Home</a>
+        <a href="cusres.html">Reservations</a>
+        <a href="cont.html">Contact Us</a>
+        <a href="cart.html">Cart</a>
+    </div>
+    <main>
+        <div class="menu-container">
+            <div class="menu-categories">
+                <button class="category active">All Items</button>
+                <button class="category">Appetizers</button>
+                <button class="category">Main Course</button>
+                <button class="category">Desserts</button>
+                <button class="category">Beverages</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item appetizers">Spring Rolls</div>
+                <div class="menu-item appetizers">Garlic Bread</div>
+                <div class="menu-item main-course">Grilled Chicken</div>
+                <div class="menu-item main-course">Spaghetti Bolognese</div>
+                <div class="menu-item desserts">Chocolate Cake</div>
+                <div class="menu-item desserts">Ice Cream</div>
+                <div class="menu-item beverages">Coffee</div>
+                <div class="menu-item beverages">Fresh Juice</div>
+            </div>
+    </main>
+    </script>
+</body>
+</html>

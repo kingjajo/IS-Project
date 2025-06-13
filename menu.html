@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Management</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="heading">
+        <img src="img/apc.png" alt="">
+        <h1>Alice Premium Dishes</h1>
+        <a href="admin.html">Dashboard</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="order.html">Order Management</a>
+        <a href="#staff">Staff Management</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <main>
+        <input class="search-input" type="text" placeholder="Search Menu">
+        <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+        <div class="welcome">
+            <h1 style="text-align: center;">Menu Management Page</h1>
+        </div>
+        <div class="thetable">
+            <h3>Menu</h3>
+            <table bgcolor="black">
+                <tr bgcolor="white">
+                    <th>No.</th>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                    <th>Actions</th>
+                </tr>
+                <tr bgcolor="white">
+                    <td>1</td>
+                    <td>19887</td>
+                    <td>Cheeseburger</td>
+                    <td>Appetizer</td>
+                    <td>140 LRD</td>
+                    <td>Availible</td>
+                    <td><button>Edit</button><button>Delete</button></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Add New Item</h3>
+            <form action="">
+                <input type="text" placeholder="Item Name">
+                <h5>Category</h5>
+                <select name="Category" id="ctgr">
+                    <option value="1">Appetizer</option>
+                    <option value="2">Main Course</option>
+                    <option value="3">Dessert</option>
+                    <option value="4">Beverage</option>
+                </select>
+                <input type="text" placeholder="Price">
+                <input type="radio" id="availible" name="availibility" value="availible">
+                <label for="availible">Availible</label>
+                <input type="radio" id="unavailible" name="availibility" value="unavailible">
+                <label for="unavailible">Unavailible</label>
+                <div>
+                    <button type="submit">Add Item</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

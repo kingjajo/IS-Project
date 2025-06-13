@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="heading">
+        <img src="img/apc-removebg-preview.png" alt="logo of AP Dishes">
+        <h1>Alice Premium Dishes</h1>
+        <a href="admin.html">Dashboard</a>
+        <a href="menu.html">Menu Management</a>
+        <a href="order.html">Order Management</a>
+        <a href="#staff">Staff Management</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <main>
+        <div class="welcome">
+            <h1 style="text-align: center;">Inventory Management</h1>
+        </div>
+        <div class="thetable">
+            <h3>Inventory</h3>
+            <table bgcolor="black">
+                <tr bgcolor="white">
+                    <th>No.</th>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Category</th>
+                    <th>Quantity Stock</th>
+                    <th>Reorder Level</th>
+                    <th>Actions</th>
+                </tr>
+                <tr bgcolor="white">
+                    <td>1</td>
+                    <td>19887</td>
+                    <td>Cheeseburger</td>
+                    <td>Perishable</td>
+                    <td>140</td>
+                    <td>Availible</td>
+                    <td><button>Update</button><button>Delete</button></td>
+                    
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Add New Inventory</h3>
+            <form action="">
+                <input type="text" placeholder="Item Name">
+                <h5>Category</h5>
+                <select name="Category" id="ctgr">
+                    <option value="1">Perishable</option>
+                    <option value="2">Non-Perishable</option>
+                    <option value="3">Cleaning supplies</option>
+                </select>
+                <input type="text" placeholder="Price">
+                <input type="number" placeholder="Quantity">
+                <input type="number" placeholder="Reorder level">
+                <div>
+                    <button type="submit">Add Item</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
